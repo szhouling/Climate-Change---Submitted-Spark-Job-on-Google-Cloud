@@ -7,7 +7,7 @@ spark = SparkSession.builder\
         .getOrCreate()
 
 # Load the data using Spark
-df = spark.read.csv('gs://colacola_bigdata_hw2/globalTemp.csv', header=True, inferSchema=True)
+df = spark.read.csv('', header=True, inferSchema=True)
 
 # For highest average temperature
 max_temp_value = df.agg(max("AverageTemperature")).collect()[0][0]
@@ -29,7 +29,7 @@ top_10_countries = temp_change.orderBy(col("temp_change").desc()).limit(10)
 top_10_countries.show()
 
 # Load CO2 emissions data
-df_co2 = spark.read.csv('gs://colacola_bigdata_hw2/CO2 emissions.csv', header=True, inferSchema=True)
+df_co2 = spark.read.csv('', header=True, inferSchema=True)
 
 # Melt DataFrame for CO2 emissions by years
 years = [str(year) for year in range(1960, 2015)]
