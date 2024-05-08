@@ -1,4 +1,4 @@
-# Climate Change Project: Tasmanian Box Analysis
+# Climate Change Analysis with Spark: Leveraging Google Cloud for Scalable Data Processing
 
 ## Introduction
 In this project, I analyzed temperature and CO2 emissions data to understand the impact of climate change on different countries Google Colab with Spark instance. The data is sourced from two datasets: one containing temperature data by countries from 1750 to 2015, and the other containing CO2 emissions per capita across countries from 1960 to 2014. The analysis aims to uncover trends in temperature changes, identify countries with the highest temperature variations, and explore the correlation between CO2 emissions and temperature change. I later ran all the code as a spark job on Google Cloud which helped me dealing with big datasets. 
